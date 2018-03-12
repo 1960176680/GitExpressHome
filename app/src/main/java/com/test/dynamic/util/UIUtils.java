@@ -2,19 +2,17 @@ package com.test.dynamic.util;
 
 import android.content.Context;
 import android.content.res.Resources;
+import android.os.Handler;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.util.TypedValue;
 import android.widget.Toast;
 import com.test.dynamic.app.MyApp;
+import com.test.dynamic.app.base.BaseApp;
 
 import static com.test.dynamic.app.AppConst.TAG;
 import static com.zhy.autolayout.utils.ScreenUtils.getStatusBarHeight;
 
-/**
- * @创建者 CSDN_LQR
- * @描述 和ui相关的工具类
- */
 public class UIUtils {
 
     public static Toast mToast;
@@ -36,7 +34,7 @@ public class UIUtils {
 
     public static void showToast(String msg, int duration) {
         if (mToast == null) {
-            mToast = Toast.makeText(MyApp.getInstances(), "", duration);
+            mToast = Toast.makeText(getContext(), "", duration);
         }
         mToast.setText(msg);
         mToast.show();
@@ -45,19 +43,19 @@ public class UIUtils {
     /**
      * 用于在线程中执行弹土司操作
      */
-//    public static void showToastSafely(final String msg) {
-//        UIUtils.getMainThreadHandler().post(new Runnable() {
-//
-//            @Override
-//            public void run() {
-//                if (mToast == null) {
-//                    mToast = Toast.makeText(MyApp.getInstances(), "", Toast.LENGTH_SHORT);
-//                }
-//                mToast.setText(msg);
-//                mToast.show();
-//            }
-//        });
-//    }
+    public static void showToastSafely(final String msg) {
+        UIUtils.getMainThreadHandler().post(new Runnable() {
+
+            @Override
+            public void run() {
+                if (mToast == null) {
+                    mToast = Toast.makeText(getContext(), "", Toast.LENGTH_SHORT);
+                }
+                mToast.setText(msg);
+                mToast.show();
+            }
+        });
+    }
 
 
     /**
@@ -65,9 +63,9 @@ public class UIUtils {
      *
      * @return
      */
-//    public static Context getContext() {
-//        return BaseApp.getContext();
-//    }
+    public static Context getContext() {
+        return BaseApp.getContext();
+    }
 
     /**
      * 得到resources对象
@@ -75,7 +73,7 @@ public class UIUtils {
      * @return
      */
     public static Resources getResource() {
-        return MyApp.getInstances().getResources();
+        return getContext().getResources();
     }
 
     /**
@@ -123,7 +121,7 @@ public class UIUtils {
      * @return
      */
     public static String getPackageName() {
-        return MyApp.getInstances().getPackageName();
+        return getContext().getPackageName();
     }
 
     /**
@@ -131,34 +129,34 @@ public class UIUtils {
      *
      * @return
      */
-//    public static Handler getMainThreadHandler() {
-////        return MyApp.getMainHandler();
-//    }
+    public static Handler getMainThreadHandler() {
+        return MyApp.getMainHandler();
+    }
 
     /**
      * 得到主线程id
      *
      * @return
      */
-//    public static long getMainThreadId() {
-//        return MyApp.getMainThreadId();
-//    }
+    public static long getMainThreadId() {
+        return MyApp.getMainThreadId();
+    }
 
     /**
      * 安全的执行一个任务
      *
      * @param task
      */
-//    public static void postTaskSafely(Runnable task) {
-//        int curThreadId = android.os.Process.myTid();
-//        // 如果当前线程是主线程
-//        if (curThreadId == getMainThreadId()) {
-//            task.run();
-//        } else {
-//            // 如果当前线程不是主线程
-//            getMainThreadHandler().post(task);
-//        }
-//    }
+    public static void postTaskSafely(Runnable task) {
+        int curThreadId = android.os.Process.myTid();
+        // 如果当前线程是主线程
+        if (curThreadId == getMainThreadId()) {
+            task.run();
+        } else {
+            // 如果当前线程不是主线程
+            getMainThreadHandler().post(task);
+        }
+    }
 
     /**
      * 延迟执行任务
@@ -166,16 +164,16 @@ public class UIUtils {
      * @param task
      * @param delayMillis
      */
-//    public static void postTaskDelay(Runnable task, int delayMillis) {
-//        getMainThreadHandler().postDelayed(task, delayMillis);
-//    }
+    public static void postTaskDelay(Runnable task, int delayMillis) {
+        getMainThreadHandler().postDelayed(task, delayMillis);
+    }
 
     /**
      * 移除任务
      */
-//    public static void removeTask(Runnable task) {
-//        getMainThreadHandler().removeCallbacks(task);
-//    }
+    public static void removeTask(Runnable task) {
+        getMainThreadHandler().removeCallbacks(task);
+    }
 
     /**
      * dip-->px
@@ -209,19 +207,19 @@ public class UIUtils {
     }
 
 
-//    public static int getDisplayWidth() {
-//        if (screenWidth == 0) {
-//            GetInfo(UIUtils.getContext());
-//        }
-//        return screenWidth;
-//    }
+    public static int getDisplayWidth() {
+        if (screenWidth == 0) {
+            GetInfo(UIUtils.getContext());
+        }
+        return screenWidth;
+    }
 
-//    public static int getDisplayHeight() {
-//        if (screenHeight == 0) {
-//            GetInfo(UIUtils.getContext());
-//        }
-//        return screenHeight;
-//    }
+    public static int getDisplayHeight() {
+        if (screenHeight == 0) {
+            GetInfo(UIUtils.getContext());
+        }
+        return screenHeight;
+    }
 
     public static void GetInfo(Context context) {
         if (null == context) {

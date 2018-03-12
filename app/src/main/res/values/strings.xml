@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">酒窖系统</string>
+    <string name="app_name">私家驿站</string>
     <string name="error_code">异常码：</string>
     <string name="add_friend">添加朋友</string>
     <string name="search">搜索</string>
@@ -21,23 +21,10 @@
     <string name="disconnect_server">与服务器失联</string>
 
     <!--主界面-->
-    <string name="tv_in">新增</string>
-    <string name="tv_out">出/入库</string>
-    <string name="tv_query">查询</string>
     <string name="tv_more">更多</string>
 
-    <string name="tv_title_in">商品新增</string>
-    <string name="tv_title_out">商品登记</string>
-    <string name="tv_title_query">商品查询</string>
-    <string name="tv_title_more">更多</string>
-
+    <string name="tv_title_more">我的</string>
     <!--发现-->
-    <string name="friend_cicle">朋友圈</string>
-    <string name="scan">扫一扫</string>
-    <string name="shake">摇一摇</string>
-    <string name="people_nearby">附近的人</string>
-    <string name="shopping">购物</string>
-    <string name="game">游戏</string>
 
     <!--我-->
     <string name="my_chat_account">微信号:%1$s</string>
