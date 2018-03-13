@@ -6,7 +6,7 @@ android {
     buildToolsVersion "27.0.3"
     defaultConfig {
         applicationId "com.test.dynamic"
-        minSdkVersion 21
+        minSdkVersion 16
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
@@ -55,4 +55,6 @@ dependencies {
     compile 'cn.bingoogolapple:bga-qrcodecore:1.1.7@aar'
     compile 'cn.bingoogolapple:bga-zxing:1.1.7@aar'
     compile 'com.google.zxing:core:3.2.1'
+    compile 'com.android.support:multidex:1.0.1'
+
 }

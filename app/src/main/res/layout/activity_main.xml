@@ -147,7 +147,7 @@
                         android:id="@+id/tvMePress"
                         android:layout_width="@dimen/main_bottom_iv_horizontal_size"
                         android:layout_height="@dimen/main_bottom_iv_vertical_size"
-                        android:background="@mipmap/me_press"
+                        android:background="@mipmap/me_pressed"
                         android:button="@null"
                         android:gravity="center"
                         android:textColor="@color/green0"

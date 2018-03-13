@@ -20,6 +20,7 @@ public class AppConst {
         public static final String ID = "id";
                 public static final String ACCOUNT = "account";
         public static final String TOKEN = "token";
+        public static final String ROLE = "role";
     }
     //语音存放位置
     public static final String AUDIO_SAVE_DIR = FileUtils.getDir("audio");

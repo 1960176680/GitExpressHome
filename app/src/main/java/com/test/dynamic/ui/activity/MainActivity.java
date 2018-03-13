@@ -241,7 +241,6 @@ public class MainActivity extends BaseActivity<IMainAtView,MainAtPresenter> impl
                 tvMePress.getBackground().setAlpha(diaphaneity_one);
                 break;
             case 1:
-                mIbAddMenu.setVisibility(View.VISIBLE);
                 setToolbarTitle(UIUtils.getString(R.string.tv_title_more));
                 break;
         }
@@ -259,12 +258,6 @@ public class MainActivity extends BaseActivity<IMainAtView,MainAtPresenter> impl
 
     @Override
     public void onPageScrollStateChanged(int state) {
-        if (state != ViewPager.SCROLL_STATE_IDLE) {
-            //滚动过程中隐藏快速导航条
-//            FragmentFactory.getInstance().getContactsFragment().showQuickIndexBar(false);
-        } else {
-//            FragmentFactory.getInstance().getContactsFragment().showQuickIndexBar(true);
-        }
     }
 
 

@@ -33,4 +33,11 @@ public class UserCache {
 //        DBManager.getInstance().deleteAllUserInfo();
     }
 
+    public static void saveRole(String role) {
+        SPUtils.getInstance(UIUtils.getContext()).putString(AppConst.User.ROLE, role);
+    }
+
+    public static String getRole() {
+        return SPUtils.getInstance(UIUtils.getContext()).getString(AppConst.User.ROLE, "");
+    }
 }

@@ -15,7 +15,7 @@
                 android:background="@mipmap/head_index">
 
                 <com.zhy.autolayout.AutoLinearLayout
-                    android:background="@color/white"
+                    android:background="@drawable/view_radius"
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
@@ -44,7 +44,9 @@
                         android:layout_marginLeft="6dp"
                         android:layout_weight="1"
                         android:gravity="center_vertical"
-                        android:background="@null"/>
+                        android:background="@null"
+                        android:hint="请输入12位运单号"
+                        android:textSize="16sp"/>
 
                     <ImageView
                         android:layout_width="20dp"
@@ -56,72 +58,110 @@
                         />
                 </com.zhy.autolayout.AutoLinearLayout>
             </com.zhy.autolayout.AutoRelativeLayout>
-            <View
-                android:layout_marginTop="30dp"
-                style="@style/Line"
-                android:layout_marginLeft="18dp"
-                android:layout_marginRight="18dp"
-                />
+
             <com.zhy.autolayout.AutoLinearLayout
+                android:visibility="gone"
+                android:id="@+id/lineExpresser"
                 android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:orientation="horizontal"
-                android:gravity="center_vertical">
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <View
+                    android:layout_marginTop="30dp"
+                    style="@style/Line"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    />
 
                 <com.zhy.autolayout.AutoLinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:orientation="vertical"
-                    android:gravity="center">
-                    <ImageView
-                        android:layout_width="62dp"
-                        android:layout_height="48dp"
-                        android:src="@mipmap/ic_card"
-                        android:scaleType="fitXY"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="小区打卡"
-                        android:layout_marginTop="22dp"
-                        android:textSize="22sp"
-                        />
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
 
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center">
+                        <ImageView
+                            android:layout_width="62dp"
+                            android:layout_height="48dp"
+                            android:src="@mipmap/ic_card"
+                            android:scaleType="fitXY"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="小区打卡"
+                            android:layout_marginTop="22dp"
+                            android:textSize="22sp"
+                            />
+
+
+                    </com.zhy.autolayout.AutoLinearLayout>
+                    <View
+                        style="@style/Line"
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginBottom="25dp"
+                        />
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center">
+                        <ImageView
+                            android:layout_width="62dp"
+                            android:layout_height="48dp"
+                            android:src="@mipmap/ic_pack"
+                            android:scaleType="fitXY"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="存包裹"
+                            android:layout_marginTop="22dp"
+                            android:textSize="22sp"
+                            />
+                    </com.zhy.autolayout.AutoLinearLayout>
 
                 </com.zhy.autolayout.AutoLinearLayout>
+
                 <View
                     style="@style/Line"
-                    android:layout_width="0.5dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="25dp"
-                    android:layout_marginBottom="25dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
                     />
-                <com.zhy.autolayout.AutoLinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:orientation="vertical"
-                    android:gravity="center">
-                    <ImageView
-                        android:layout_width="62dp"
-                        android:layout_height="48dp"
-                        android:src="@mipmap/ic_pack"
-                        android:scaleType="fitXY"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="存包裹"
-                        android:layout_marginTop="22dp"
-                        android:textSize="22sp"
-                        />
-                </com.zhy.autolayout.AutoLinearLayout>
-
             </com.zhy.autolayout.AutoLinearLayout>
-            <View
-                style="@style/Line"
-                android:layout_marginLeft="18dp"
-                android:layout_marginRight="18dp"
-                />
+             <com.zhy.autolayout.AutoLinearLayout
+                 android:id="@+id/lineUser"
+                 android:visibility="gone"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:gravity="center"
+                 android:layout_marginTop="30dp">
+
+                     <com.zhy.autolayout.AutoLinearLayout
+
+                         android:layout_width="wrap_content"
+                         android:layout_height="match_parent"
+                         android:orientation="vertical"
+                         android:gravity="center">
+                         <ImageView
+                             android:layout_width="62dp"
+                             android:layout_height="48dp"
+                             android:src="@mipmap/ic_pack"
+                             android:scaleType="fitXY"/>
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="收包裹"
+                             android:layout_marginTop="22dp"
+                             android:textSize="22sp"
+                             />
+                     </com.zhy.autolayout.AutoLinearLayout>
+                 </com.zhy.autolayout.AutoLinearLayout>
         </LinearLayout>
 
     </ScrollView>

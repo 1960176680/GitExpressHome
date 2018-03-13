@@ -18,6 +18,7 @@ import com.jaeger.library.StatusBarUtil;
 import com.test.dynamic.R;
 import com.test.dynamic.app.MyApp;
 import com.test.dynamic.presenter.base.BasePresenter;
+import com.test.dynamic.util.LogUtils;
 import com.test.dynamic.util.UIUtils;
 import com.test.dynamic.widget.CustomDialog;
 import com.zhy.autolayout.AutoLinearLayout;

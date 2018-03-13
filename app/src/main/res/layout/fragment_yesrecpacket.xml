@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:text="运单编号"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:id="@+id/textView3"
+            android:gravity="center"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:text="快递公司"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:id="@+id/textView4"
+            android:gravity="center"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:text="收件时间"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:id="@+id/textView6"
+            android:gravity="center"
+            android:textSize="16sp"/>
+    </com.zhy.autolayout.AutoLinearLayout>
+    <View
+        style="@style/Line"
+        />
+    <com.lqr.recyclerview.LQRRecyclerView
+        android:id="@+id/rvRecentMessage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:rv_divider_color="@color/line"
+        app:rv_divider_size="1px"/>
+</LinearLayout>

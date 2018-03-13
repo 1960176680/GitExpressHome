@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="18dp"
+        android:gravity="center_vertical"
+        android:id="@+id/line1"
+        >
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/icon_package"
+            android:scaleType="fitXY"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:gravity="center_vertical"
+            android:text="我的包裹"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/imageView5"
+            android:layout_marginStart="10dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_rg"
+            android:id="@+id/imageView4"
+
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp" />
+
+        <TextView
+            android:text="0个待收包裹"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView5"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/imageView4" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <TextView
+        style="@style/Line"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"/>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="18dp"
+        android:gravity="center_vertical"
+        android:id="@+id/line2">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/loaction_bucket"
+            android:scaleType="fitXY"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:gravity="center_vertical"
+            android:text="我的地址"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/imageView7"
+            android:layout_marginStart="10dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_rg"
+            android:id="@+id/imageView6"
+
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <TextView
+        style="@style/Line"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"/>
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="18dp"
+        android:gravity="center_vertical" android:id="@+id/line3">
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/icon_expressbarrel"
+            android:scaleType="fitXY"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:gravity="center_vertical"
+            android:text="我的箱子"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/imageView8"
+            android:layout_marginStart="10dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_rg"
+            android:id="@+id/imageView9"
+
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp" />
+
+        <TextView
+            android:text="0个箱子"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignBottom="@+id/imageView8"
+            android:layout_toStartOf="@+id/imageView9" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <TextView
+        style="@style/Line"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"/>
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="18dp"
+        android:gravity="center_vertical" android:id="@+id/line4">
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/icon_expressbarrel"
+            android:scaleType="fitXY"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:gravity="center_vertical"
+            android:text="绑定新箱子"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/image1"
+            android:layout_marginStart="10dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_rg"
+            android:id="@+id/image2"
+
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <TextView
+        style="@style/Line"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"/>
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="18dp"
+        android:gravity="center_vertical" android:id="@+id/line5">
+
+        <ImageView
+            android:id="@+id/image3"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/icon_register"
+            android:scaleType="fitXY"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:gravity="center_vertical"
+            android:text="注册登记"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/image3"
+            android:layout_marginStart="10dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_rg"
+            android:id="@+id/image4"
+
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp" />
+
+        <TextView
+            android:text="未注册"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text5"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/image4" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <TextView
+        style="@style/Line"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"/>
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="18dp"
+        android:gravity="center_vertical" android:id="@+id/line6">
+
+        <ImageView
+            android:id="@+id/image5"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/icon_customservice"
+            android:scaleType="fitXY"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:gravity="center_vertical"
+            android:text="联系客服"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/image5"
+            android:layout_marginStart="10dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_rg"
+            android:id="@+id/image6"
+
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <TextView
+        style="@style/Line"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"/>
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="18dp"
+        android:gravity="center_vertical" android:id="@+id/line7">
+
+        <ImageView
+            android:id="@+id/image7"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/icon_customservice"
+            android:scaleType="fitXY"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:gravity="center_vertical"
+            android:text="切换登录身份"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/image7"
+            android:layout_marginStart="10dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_rg"
+            android:id="@+id/image8"
+
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <TextView
+        style="@style/Line"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"/>
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="18dp"
+        android:gravity="center_vertical" android:id="@+id/line8">
+
+        <ImageView
+            android:id="@+id/image9"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/icon_setup"
+            android:scaleType="fitXY"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:gravity="center_vertical"
+            android:text="设置"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/image9"
+            android:layout_marginStart="10dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_rg"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <TextView
+        style="@style/Line"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"/>
+</LinearLayout>
