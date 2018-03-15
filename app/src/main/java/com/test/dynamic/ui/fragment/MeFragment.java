@@ -6,11 +6,18 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.test.dynamic.R;
+import com.test.dynamic.app.MyApp;
 import com.test.dynamic.model.entity.cache.UserCache;
 import com.test.dynamic.presenter.MeFgPresenter;
+import com.test.dynamic.ui.activity.BindNewBoxActivity;
 import com.test.dynamic.ui.activity.MainActivity;
+import com.test.dynamic.ui.activity.MyAddressActivity;
+import com.test.dynamic.ui.activity.MyBoxActivity;
 import com.test.dynamic.ui.activity.MyPacketActivity;
+import com.test.dynamic.ui.activity.RegisterActivity;
 import com.test.dynamic.ui.activity.RoleActivity;
+import com.test.dynamic.ui.activity.ServiceActivity;
+import com.test.dynamic.ui.activity.SettingActivity;
 import com.test.dynamic.ui.common.BaseFragment;
 import com.test.dynamic.ui.view.IMeFgView;
 import com.test.dynamic.util.LogUtils;
@@ -32,16 +39,28 @@ public class MeFragment extends BaseFragment<IMeFgView, MeFgPresenter> implement
 
     @Bind(R.id.line1)
     AutoRelativeLayout line1;
+    @Bind(R.id.line11)
+    AutoRelativeLayout line11;
     @Bind(R.id.line2)
     AutoRelativeLayout line2;
+    @Bind(R.id.line22)
+    AutoRelativeLayout line22;
     @Bind(R.id.line3)
     AutoRelativeLayout line3;
+    @Bind(R.id.line33)
+    AutoRelativeLayout line33;
     @Bind(R.id.line4)
     AutoRelativeLayout line4;
+    @Bind(R.id.line44)
+    AutoRelativeLayout line44;
     @Bind(R.id.line5)
     AutoRelativeLayout line5;
+    @Bind(R.id.line55)
+    AutoRelativeLayout line55;
     @Bind(R.id.line6)
     AutoRelativeLayout line6;
+    @Bind(R.id.line66)
+    AutoRelativeLayout line66;
     @Bind(R.id.line7)
     AutoRelativeLayout line7;
     @Bind(R.id.line8)
@@ -72,38 +91,51 @@ public class MeFragment extends BaseFragment<IMeFgView, MeFgPresenter> implement
         line7.setOnClickListener(v -> listClick(v));
         line8.setOnClickListener(v -> listClick(v));
 
+
+        line11.setOnClickListener(v -> listClick(v));
+        line22.setOnClickListener(v -> listClick(v));
+        line33.setOnClickListener(v -> listClick(v));
+        line44.setOnClickListener(v -> listClick(v));
+        line55.setOnClickListener(v -> listClick(v));
+        line66.setOnClickListener(v -> listClick(v));
+
     }
 
     private void listClick(View v) {
         MainActivity mainActivity= (MainActivity) getActivity();
         switch (v.getId()){
             case R.id.line1:
+            case R.id.line11:
                 mainActivity.jumpToActivity(MyPacketActivity.class);
                 break;
             case R.id.line2:
-                mainActivity.jumpToActivity(MyPacketActivity.class);
+            case R.id.line22:
+                mainActivity.jumpToActivity(MyAddressActivity.class);
                 break;
             case R.id.line3:
-                mainActivity.jumpToActivity(MyPacketActivity.class);
+            case R.id.line33:
+                mainActivity.jumpToActivity(MyBoxActivity.class);
                 break;
             case R.id.line4:
-                mainActivity.jumpToActivity(MyPacketActivity.class);
+                mainActivity.jumpToActivity(BindNewBoxActivity.class);
                 break;
             case R.id.line5:
-                mainActivity.jumpToActivity(MyPacketActivity.class);
+                mainActivity.jumpToActivity(RegisterActivity.class);
                 break;
             case R.id.line6:
-                mainActivity.jumpToActivity(MyPacketActivity.class);
+            case R.id.line44:
+                mainActivity.jumpToActivity(ServiceActivity.class);
                 break;
             case R.id.line7:
+            case R.id.line55:
+                MyApp.activities.clear();
                 mainActivity.jumpToActivityAndClearTask(RoleActivity.class);
+                mainActivity.finish();
                 break;
             case R.id.line8:
-                mainActivity.jumpToActivity(MyPacketActivity.class);
+            case R.id.line66:
+                mainActivity.jumpToActivity(SettingActivity.class);
                 break;
-
-
-
         }
     }
 

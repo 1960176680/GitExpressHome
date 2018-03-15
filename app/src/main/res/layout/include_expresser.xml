@@ -9,20 +9,20 @@
         android:layout_height="40dp"
         android:layout_marginLeft="18dp"
         android:gravity="center_vertical"
-        android:id="@+id/line1"
+        android:id="@+id/line11"
         >
 
         <ImageView
             android:id="@+id/imageView5"
             android:layout_width="20dp"
             android:layout_height="20dp"
-            android:src="@mipmap/icon_package"
+            android:src="@mipmap/mymessage"
             android:scaleType="fitXY"
             android:layout_centerVertical="true" />
 
         <TextView
             android:gravity="center_vertical"
-            android:text="我的包裹"
+            android:text="我的信息"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_alignParentTop="true"
@@ -40,7 +40,7 @@
             android:layout_marginEnd="16dp" />
 
         <TextView
-            android:text="0个待收包裹"
+            android:text="待完善"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/textView5"
@@ -59,19 +59,19 @@
         android:layout_height="40dp"
         android:layout_marginLeft="18dp"
         android:gravity="center_vertical"
-        android:id="@+id/line2">
+        android:id="@+id/line22">
 
         <ImageView
             android:id="@+id/imageView7"
             android:layout_width="20dp"
             android:layout_height="20dp"
-            android:src="@mipmap/loaction_bucket"
+            android:src="@mipmap/residentialquarters"
             android:scaleType="fitXY"
             android:layout_centerVertical="true" />
 
         <TextView
             android:gravity="center_vertical"
-            android:text="我的地址"
+            android:text="我负责的小区"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_alignParentTop="true"
@@ -87,7 +87,13 @@
             android:layout_centerVertical="true"
             android:layout_alignParentEnd="true"
             android:layout_marginEnd="16dp" />
-
+        <TextView
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView6"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/imageView6" />
     </com.zhy.autolayout.AutoRelativeLayout>
 
     <TextView
@@ -99,19 +105,19 @@
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_marginLeft="18dp"
-        android:gravity="center_vertical" android:id="@+id/line3">
+        android:gravity="center_vertical" android:id="@+id/line33">
 
         <ImageView
             android:id="@+id/imageView8"
             android:layout_width="20dp"
             android:layout_height="20dp"
-            android:src="@mipmap/icon_expressbarrel"
+            android:src="@mipmap/apply"
             android:scaleType="fitXY"
             android:layout_centerVertical="true" />
 
         <TextView
             android:gravity="center_vertical"
-            android:text="我的箱子"
+            android:text="进驻申请"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_alignParentTop="true"
@@ -128,13 +134,6 @@
             android:layout_alignParentEnd="true"
             android:layout_marginEnd="16dp" />
 
-        <TextView
-            android:text="0个箱子"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-
-            android:layout_alignBottom="@+id/imageView8"
-            android:layout_toStartOf="@+id/imageView9" />
     </com.zhy.autolayout.AutoRelativeLayout>
 
     <TextView
@@ -142,98 +141,12 @@
         android:layout_width="match_parent"
         android:layout_marginLeft="18dp"
         android:layout_marginRight="18dp"/>
+
     <com.zhy.autolayout.AutoRelativeLayout
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_marginLeft="18dp"
-        android:gravity="center_vertical" android:id="@+id/line4">
-
-        <ImageView
-            android:id="@+id/image1"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:src="@mipmap/icon_expressbarrel"
-            android:scaleType="fitXY"
-            android:layout_centerVertical="true" />
-
-        <TextView
-            android:gravity="center_vertical"
-            android:text="绑定新箱子"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_alignParentTop="true"
-            android:layout_toEndOf="@+id/image1"
-            android:layout_marginStart="10dp" />
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@mipmap/icon_rg"
-            android:id="@+id/image2"
-
-            android:layout_centerVertical="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginEnd="16dp" />
-
-    </com.zhy.autolayout.AutoRelativeLayout>
-
-    <TextView
-        style="@style/Line"
-        android:layout_width="match_parent"
-        android:layout_marginLeft="18dp"
-        android:layout_marginRight="18dp"/>
-    <com.zhy.autolayout.AutoRelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_marginLeft="18dp"
-        android:gravity="center_vertical" android:id="@+id/line5">
-
-        <ImageView
-            android:id="@+id/image3"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:src="@mipmap/icon_register"
-            android:scaleType="fitXY"
-            android:layout_centerVertical="true" />
-
-        <TextView
-            android:gravity="center_vertical"
-            android:text="注册登记"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_alignParentTop="true"
-            android:layout_toEndOf="@+id/image3"
-            android:layout_marginStart="10dp" />
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@mipmap/icon_rg"
-            android:id="@+id/image44"
-
-            android:layout_centerVertical="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginEnd="16dp" />
-
-        <TextView
-            android:text="未注册"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/text5"
-            android:layout_centerVertical="true"
-            android:layout_toStartOf="@+id/image44" />
-    </com.zhy.autolayout.AutoRelativeLayout>
-
-    <TextView
-        style="@style/Line"
-        android:layout_width="match_parent"
-        android:layout_marginLeft="18dp"
-        android:layout_marginRight="18dp"/>
-    <com.zhy.autolayout.AutoRelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_marginLeft="18dp"
-        android:gravity="center_vertical" android:id="@+id/line6">
+        android:gravity="center_vertical" android:id="@+id/line44">
 
         <ImageView
             android:id="@+id/image5"
@@ -273,13 +186,13 @@
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_marginLeft="18dp"
-        android:gravity="center_vertical" android:id="@+id/line7">
+        android:gravity="center_vertical" android:id="@+id/line55">
 
         <ImageView
             android:id="@+id/image7"
             android:layout_width="20dp"
             android:layout_height="20dp"
-            android:src="@mipmap/icon_customservice"
+            android:src="@mipmap/mymessage"
             android:scaleType="fitXY"
             android:layout_centerVertical="true" />
 
@@ -313,7 +226,7 @@
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_marginLeft="18dp"
-        android:gravity="center_vertical" android:id="@+id/line8">
+        android:gravity="center_vertical" android:id="@+id/line66">
 
         <ImageView
             android:id="@+id/image9"

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/include_toolbar"/>
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="18dp"
+        android:gravity="center_vertical"
+        android:id="@+id/line1">
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/icon_newbind"
+            android:scaleType="fitXY"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:textSize="18sp"
+            android:gravity="center_vertical"
+            android:text="新绑定"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/imageView8"
+            android:layout_marginStart="10dp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/icon_rg"
+            android:id="@+id/imageView1"
+
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <TextView
+        style="@style/Line"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"/>
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="18dp"
+        android:gravity="center_vertical"
+        android:id="@+id/line2">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/icon_associationbind"
+            android:scaleType="fitXY"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:textSize="18sp"
+            android:gravity="center_vertical"
+            android:text="关联绑定"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/imageView7"
+            android:layout_marginStart="10dp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/icon_rg"
+            android:id="@+id/imageView6"
+
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <TextView
+        style="@style/Line"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"/>
+</LinearLayout>

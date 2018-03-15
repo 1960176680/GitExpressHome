@@ -1,4 +1,4 @@
-package com.test.dynamic.model;
+package com.test.dynamic.model.entity;
 
 import org.greenrobot.greendao.annotation.Entity;
 import org.greenrobot.greendao.annotation.Id;

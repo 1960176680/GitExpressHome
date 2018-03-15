@@ -21,6 +21,7 @@ import com.test.dynamic.ui.common.BaseActivity;
 import com.test.dynamic.ui.common.BaseFragment;
 import com.test.dynamic.ui.fragment.FragmentFactory;
 import com.test.dynamic.ui.view.IMainAtView;
+import com.test.dynamic.util.LogUtils;
 import com.test.dynamic.util.UIUtils;
 
 import java.util.ArrayList;
@@ -67,6 +68,7 @@ public class MainActivity extends BaseActivity<IMainAtView,MainAtPresenter> impl
 
     @Override
     public void initView() {
+        LogUtils.i(getTaskId()+"----mainactivity");
         setToolbarTitle(UIUtils.getString(R.string.app_name));
         //默认选中第一个
         setTransparency();

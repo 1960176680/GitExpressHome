@@ -1,5 +1,7 @@
 package com.test.dynamic.ui.fragment;
 
+import com.test.dynamic.ui.fragment.myaddress.RecAddressFragment;
+import com.test.dynamic.ui.fragment.myaddress.SendAddressFragment;
 import com.test.dynamic.ui.fragment.mypacket.NoRecPacketFragment;
 import com.test.dynamic.ui.fragment.mypacket.YesRecPacketFragment;
 
@@ -27,6 +29,8 @@ public class FragmentFactory {
     private YesRecPacketFragment mYesRecPacketFragment;
     private NoRecPacketFragment mNoRecPacketFragment;
 
+    private RecAddressFragment mRecAddressFragment;
+    private SendAddressFragment mSendAddressFragment;
 
     public HomeFragment getHomeFragment() {
         if (mHomeFragment == null) {
@@ -73,5 +77,29 @@ public class FragmentFactory {
             }
         }
         return mNoRecPacketFragment;
+    }
+
+
+    public RecAddressFragment getRecAddressFragment() {
+        if (mRecAddressFragment == null) {
+            synchronized (FragmentFactory.class) {
+                if (mRecAddressFragment == null) {
+                    mRecAddressFragment = new RecAddressFragment();
+                }
+            }
+        }
+        return mRecAddressFragment;
+    }
+
+
+    public SendAddressFragment getSendAddressFragment() {
+        if (mSendAddressFragment == null) {
+            synchronized (FragmentFactory.class) {
+                if (mSendAddressFragment == null) {
+                    mSendAddressFragment = new SendAddressFragment();
+                }
+            }
+        }
+        return mSendAddressFragment;
     }
 }

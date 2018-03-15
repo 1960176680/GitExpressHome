@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.widget.Button;
 
 import com.test.dynamic.R;
+import com.test.dynamic.app.MyApp;
 import com.test.dynamic.presenter.RoleAtPresenter;
 import com.test.dynamic.ui.common.BaseActivity;
 import com.test.dynamic.ui.view.IRoleAtView;
@@ -38,6 +39,7 @@ public class RoleActivity extends BaseActivity<IRoleAtView,RoleAtPresenter> {
     public void initListener() {
         btnUser.setOnClickListener(v -> {
             SPUtils.getInstance(RoleActivity.this).putString("role","user");
+            MyApp.activities.clear();
             jumpToActivityAndClearTask(MainActivity.class);
             finish();
         });

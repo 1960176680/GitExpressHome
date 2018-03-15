@@ -25,9 +25,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.activity.MainActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ui.activity.MainActivity"  android:screenOrientation="portrait"/>
         <activity android:name=".SecondActivity"/>
         <activity android:name=".ui.activity.MyPacketActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ui.activity.MyAddressActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ui.activity.MyBoxActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ui.activity.BindNewBoxActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ui.activity.RegisterActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ui.activity.ServiceActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ui.activity.SettingActivity" android:screenOrientation="portrait"/>
+
     </application>
 
 </manifest>

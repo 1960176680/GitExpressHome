@@ -29,7 +29,7 @@
             />
     </com.zhy.autolayout.AutoLinearLayout>
      <include  android:id="@+id/lineUser" layout="@layout/include_user" android:visibility="gone"/>
-    <include  android:id="@+id/lineExpresser" layout="@layout/include_user" android:visibility="gone"/>
+    <include  android:id="@+id/lineExpresser" layout="@layout/include_expresser" android:visibility="gone"/>
 
 </com.zhy.autolayout.AutoLinearLayout>
 </ScrollView>
