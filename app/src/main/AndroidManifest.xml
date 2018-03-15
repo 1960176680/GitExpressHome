@@ -34,6 +34,10 @@
         <activity android:name=".ui.activity.RegisterActivity" android:screenOrientation="portrait"/>
         <activity android:name=".ui.activity.ServiceActivity" android:screenOrientation="portrait"/>
         <activity android:name=".ui.activity.SettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ui.activity.MyInfoActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ui.activity.MyDistrictActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ui.activity.JoinRequestActivity" android:screenOrientation="portrait"/>
+
 
     </application>
 

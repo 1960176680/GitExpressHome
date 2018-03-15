@@ -27,7 +27,9 @@
         android:id="@+id/imageView10"
         />
 
-    <TextView
+    <EditText
+        android:background="@null"
+        android:textSize="16sp"
         android:hint="请输入手机号"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -60,7 +62,9 @@
                 android:id="@+id/imageView11"
                 />
 
-            <TextView
+            <EditText
+                android:background="@null"
+                android:textSize="16sp"
                 android:hint="验证码3分钟有效！"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

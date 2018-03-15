@@ -16,14 +16,13 @@
     <com.zhy.autolayout.AutoLinearLayout
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        android:layout_marginTop="5dp"
         android:gravity="center"
-        android:background="#e1edff"
+        android:background="@mipmap/ic_infobg"
         >
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             app:srcCompat="@mipmap/ic_head"
             android:id="@+id/imageView3"
             />
