@@ -3,4 +3,125 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
     <include layout="@layout/include_toolbar"/>
+    <com.zhy.autolayout.AutoLinearLayout
+        android:padding="8dp"
+        android:background="#F5f5f5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:layout_marginTop="10dp">
+
+
+            <TextView
+                android:text="北京-北京市-东城区"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@mipmap/ic_pull"
+                android:scaleType="fitXY"
+                android:layout_marginLeft="60dp"
+                />
+        </com.zhy.autolayout.AutoLinearLayout>
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:layout_marginTop="1dp">
+
+
+            <EditText
+                android:hint="小区名/楼名"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@null"
+                />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@mipmap/ic_pull"
+                android:scaleType="fitXY"
+                android:layout_marginLeft="42dp"
+                />
+
+            <Button
+                android:layout_marginLeft="32dp"
+                android:textSize="16sp"
+                android:text="查询"
+                android:textColor="@color/button_text"
+                android:background="@drawable/btn_selector"
+                android:layout_width="68dp"
+                android:layout_height="30dp" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <LinearLayout
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <TextView
+            android:enabled="false"
+            android:textColor="@drawable/bg_text_selector"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:text="查询结果"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/tvQueryResult"
+            android:layout_weight="1" />
+        <TextView
+            android:textColor="@drawable/bg_text_selector"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:text="附近小区"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/tvNearby"
+            android:layout_weight="1" />
+        <TextView
+            android:textColor="@drawable/bg_text_selector"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:text="已申请"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/tvApplyed"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+        <View
+            android:id="@+id/view_line"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@color/tab_blue"/>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_record"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v4.view.ViewPager>
 </LinearLayout>

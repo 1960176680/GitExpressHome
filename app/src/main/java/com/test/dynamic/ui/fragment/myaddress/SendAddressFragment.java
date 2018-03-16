@@ -29,9 +29,9 @@ public class SendAddressFragment extends BaseFragment<ISendAddressFgView,SendAdd
         mFooterView = new Button(getContext());
         mFooterView.setBackgroundResource(R.drawable.btn_selector);
         mFooterView.setText("新增");
-        mFooterView.setTextSize(UIUtils.sp2px(8));
+        mFooterView.setTextSize(15);
         mFooterView.setTextColor(UIUtils.getResource().getColorStateList(R.color.button_text));
-        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, UIUtils.dip2Px(50));
+        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, UIUtils.dip2Px(40));
         params.leftMargin=UIUtils.dip2Px(8);
         params.rightMargin=UIUtils.dip2Px(8);
         params.topMargin=UIUtils.dip2Px(20);

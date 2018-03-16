@@ -10,6 +10,12 @@ import com.test.dynamic.ui.view.IMyInfoAtView;
  */
 
 public class MyInfoActivity extends BaseActivity<IMyInfoAtView,MyInfoAtPresenter> {
+
+    @Override
+    public void initView() {
+        setToolbarTitle("我的信息");
+    }
+
     @Override
     protected MyInfoAtPresenter createPresenter() {
         return new MyInfoAtPresenter(this);

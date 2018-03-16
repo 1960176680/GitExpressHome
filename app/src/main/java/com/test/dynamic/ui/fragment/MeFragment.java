@@ -10,9 +10,12 @@ import com.test.dynamic.app.MyApp;
 import com.test.dynamic.model.entity.cache.UserCache;
 import com.test.dynamic.presenter.MeFgPresenter;
 import com.test.dynamic.ui.activity.BindNewBoxActivity;
+import com.test.dynamic.ui.activity.JoinRequestActivity;
 import com.test.dynamic.ui.activity.MainActivity;
 import com.test.dynamic.ui.activity.MyAddressActivity;
 import com.test.dynamic.ui.activity.MyBoxActivity;
+import com.test.dynamic.ui.activity.MyDistrictActivity;
+import com.test.dynamic.ui.activity.MyInfoActivity;
 import com.test.dynamic.ui.activity.MyPacketActivity;
 import com.test.dynamic.ui.activity.RegisterActivity;
 import com.test.dynamic.ui.activity.RoleActivity;
@@ -105,16 +108,23 @@ public class MeFragment extends BaseFragment<IMeFgView, MeFgPresenter> implement
         MainActivity mainActivity= (MainActivity) getActivity();
         switch (v.getId()){
             case R.id.line1:
-            case R.id.line11:
                 mainActivity.jumpToActivity(MyPacketActivity.class);
                 break;
+            case R.id.line11:
+                mainActivity.jumpToActivity(MyInfoActivity.class);
+                break;
+
             case R.id.line2:
-            case R.id.line22:
                 mainActivity.jumpToActivity(MyAddressActivity.class);
                 break;
+            case R.id.line22:
+                mainActivity.jumpToActivity(MyDistrictActivity.class);
+                break;
             case R.id.line3:
-            case R.id.line33:
                 mainActivity.jumpToActivity(MyBoxActivity.class);
+                break;
+            case R.id.line33:
+                mainActivity.jumpToActivity(JoinRequestActivity.class);
                 break;
             case R.id.line4:
                 mainActivity.jumpToActivity(BindNewBoxActivity.class);
