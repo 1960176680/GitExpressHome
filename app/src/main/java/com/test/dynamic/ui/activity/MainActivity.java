@@ -67,6 +67,10 @@ public class MainActivity extends BaseActivity<IMainAtView,MainAtPresenter> impl
     private List<BaseFragment> mFragmentList;
 
     @Override
+    public void init() {
+    }
+
+    @Override
     public void initView() {
         LogUtils.i(getTaskId()+"----mainactivity");
         setToolbarTitle(UIUtils.getString(R.string.app_name));

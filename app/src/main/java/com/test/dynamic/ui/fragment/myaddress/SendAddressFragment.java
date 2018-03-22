@@ -10,6 +10,7 @@ import com.lqr.recyclerview.LQRRecyclerView;
 import com.test.dynamic.R;
 import com.test.dynamic.presenter.SendAddressFgPresent;
 import com.test.dynamic.ui.activity.MyAddressActivity;
+import com.test.dynamic.ui.activity.NewAddressActivity;
 import com.test.dynamic.ui.common.BaseFragment;
 import com.test.dynamic.ui.view.ISendAddressFgView;
 import com.test.dynamic.util.UIUtils;
@@ -38,7 +39,11 @@ public class SendAddressFragment extends BaseFragment<ISendAddressFgView,SendAdd
         mFooterView.setLayoutParams(params);
         mFooterView.setGravity(Gravity.CENTER);
     }
-
+    @Override
+    public void initListener() {
+        mFooterView.setOnClickListener(v ->
+                ((MyAddressActivity) getActivity()).jumpToActivity(NewAddressActivity.class));
+    }
     @Override
     public void initData() {
         mPresenter.getConversation();

@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/include_toolbar"/>
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="18dp"
+        android:gravity="center_vertical"
+        android:id="@+id/line0"
+        >
+
+        <TextView
+            android:gravity="center_vertical"
+            android:text="序列号："
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp" />
+
+        <EditText
+            android:textSize="16sp"
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:inputType="textPersonName"
+            android:hint="请输入箱子序列号,带出详细信息"
+            android:ems="10"
+            android:id="@+id/etScan"
+            android:layout_weight="1" />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/erweima"
+            android:id="@+id/ivScan"
+            android:scaleType="fitXY"
+            android:layout_marginEnd="8dp"
+            />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <TextView
+        style="@style/Line"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"/>
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="18dp"
+        android:gravity="center_vertical"
+        android:id="@+id/line1"
+        >
+
+        <TextView
+            android:gravity="center_vertical"
+            android:text="姓名："
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp" />
+
+        <EditText
+            android:textSize="16sp"
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:inputType="textPersonName"
+            android:hint="请输入姓名"
+            android:ems="10"
+            android:id="@+id/editText2"
+            android:layout_weight="1" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <TextView
+        style="@style/Line"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"/>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="18dp"
+        android:gravity="center_vertical"
+        android:id="@+id/line2">
+
+        <TextView
+            android:gravity="center_vertical"
+            android:text="电话："
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp" />
+
+        <EditText
+            android:textSize="16sp"
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:inputType="textPersonName"
+            android:hint="请输入电话"
+            android:ems="10"
+            android:id="@+id/editText3"
+            android:layout_weight="1" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <TextView
+        style="@style/Line"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"/>
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="18dp"
+        android:gravity="center_vertical" android:id="@+id/line3">
+
+        <TextView
+            android:gravity="center_vertical"
+            android:text="省市："
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp" />
+        <TextView
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:inputType="textPersonName"
+            android:hint="请选择省市区"
+            android:id="@+id/tvSelectAddr"
+            android:layout_weight="1" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <TextView
+        style="@style/Line"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"/>
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="18dp"
+        android:gravity="center_vertical"
+        android:id="@+id/line4">
+
+        <TextView
+            android:gravity="center_vertical"
+            android:text="小区/楼名："
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp" />
+        <EditText
+            android:textSize="16sp"
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:inputType="textPersonName"
+            android:hint="请输入详细小区名/楼名"
+            android:id="@+id/editText5"
+            android:layout_weight="1" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <TextView
+        style="@style/Line"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"/>
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="18dp"
+        android:gravity="center_vertical"
+        android:id="@+id/line5">
+
+        <TextView
+            android:gravity="center_vertical"
+            android:text="详细地址："
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp" />
+        <EditText
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:inputType="textPersonName"
+            android:hint="栋/单元"
+            android:id="@+id/editText6"
+            android:layout_weight="1" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <TextView
+        style="@style/Line"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"/>
+    <TextView
+        android:layout_marginStart="8dp"
+        android:textStyle="bold"
+        android:text="附近地址"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+         />
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:background="@drawable/view_stroke"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center_vertical"
+
+        >
+
+        <ImageView
+            android:layout_marginStart="16dp"
+            android:layout_width="36dp"
+            android:layout_height="42dp"
+            android:src="@mipmap/loaction_bucket"
+            android:id="@+id/imageView13"
+            android:scaleType="fitXY"
+             />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginStart="18dp">
+            <TextView
+                android:layout_marginTop="12dp"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="江南,近江"/>
+
+            <TextView
+                android:textSize="16sp"
+                android:textColor="#aaaaaa"
+                android:text="浙江省杭州市滨江区滨盛路"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView17"
+                android:layout_marginTop="16dp"/>
+
+
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+
+    <Button
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="保存"
+        android:textColor="@color/button_text"
+        android:background="@drawable/btn_selector"
+        android:id="@+id/btn_add"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        />
+</LinearLayout>

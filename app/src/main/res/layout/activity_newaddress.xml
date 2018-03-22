@@ -1,6 +1,183 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
     <include layout="@layout/include_toolbar"/>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="18dp"
+        android:gravity="center_vertical"
+        android:id="@+id/line1"
+        >
+
+        <TextView
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:text="姓名："
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp" />
+
+        <EditText
+            android:textSize="16sp"
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:inputType="textPersonName"
+            android:hint="请输入姓名"
+            android:ems="10"
+            android:id="@+id/editText2"
+            android:layout_weight="1" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <TextView
+        style="@style/Line"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"/>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="18dp"
+        android:gravity="center_vertical"
+        android:id="@+id/line2">
+
+        <TextView
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:text="电话："
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp" />
+
+        <EditText
+            android:textSize="16sp"
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:inputType="textPersonName"
+            android:hint="请输入电话"
+            android:ems="10"
+            android:id="@+id/editText3"
+            android:layout_weight="1" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <TextView
+        style="@style/Line"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"/>
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="18dp"
+        android:gravity="center_vertical" android:id="@+id/line3">
+
+        <TextView
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:text="省市："
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp" />
+        <TextView
+            android:gravity="center_vertical"
+             android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:inputType="textPersonName"
+            android:hint="请选择省市区"
+            android:id="@+id/selectAddr"
+            android:layout_weight="1" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <TextView
+        style="@style/Line"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"/>
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="18dp"
+        android:gravity="center_vertical"
+        android:id="@+id/line4">
+
+        <TextView
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:text="小区/楼名："
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp" />
+        <EditText
+            android:textSize="16sp"
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:inputType="textPersonName"
+            android:hint="请输入详细小区名/楼名"
+            android:id="@+id/editText5"
+            android:layout_weight="1" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <TextView
+        style="@style/Line"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"/>
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="18dp"
+        android:gravity="center_vertical"
+        android:id="@+id/line5">
+
+        <TextView
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:text="详细地址："
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp" />
+        <EditText
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:inputType="textPersonName"
+            android:hint="栋/单元"
+            android:id="@+id/editText6"
+            android:layout_weight="1" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <TextView
+        style="@style/Line"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"/>
+
+    <CheckBox
+        android:layout_marginRight="18dp"
+        android:layout_gravity="right"
+        android:text="设置为默认收件"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox2" />
+    <Button
+        android:textColor="@color/button_text"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="保存"
+        android:background="@drawable/btn_selector"
+        android:id="@+id/btn_add"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        />
 </LinearLayout>
